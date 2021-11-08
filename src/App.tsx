@@ -1,21 +1,25 @@
 // import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import Page from "./features/counter/Page";
-import CardPage from "./features/counter/CardPage";
+import HomePage from "./features/HomePage";
+import CardPage from "./features/CardPage";
+import Header from "./features/Header";
+// import { useAppSelector } from "./hooks/redux";
+
 
 const App = () => {
-
+    // const {} = useAppSelector(state => state.productReducer.products);
 
     return (
         <BrowserRouter>
-        <Switch>
-            <Route  exact
-            path ="/" component={Page}
-             />
-             <Route path="/card/:id" 
-            component={ CardPage }
-            />
-        </Switch>
+            <Header />
+            <Switch>
+                <Route exact
+                    path="/" component={HomePage}
+                />
+                <Route path="/card/:id"
+                    component={CardPage}
+                />
+            </Switch>
         </BrowserRouter>
     )
 }
