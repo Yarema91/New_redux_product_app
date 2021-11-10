@@ -11,7 +11,9 @@ interface CardPage {
 
 const CardPage: React.FC<CardPage> = () => {
 
-    const [updateProject, { }] = projectAPI.useUpdateProjectMutation();
+    const [updateProject, {error: UpdateError, isLoading: UpdateIsLoading }] = projectAPI.useUpdateProjectMutation();
+    const [deleteProject, {error: DeleteError, isLoading: DeleteIsLoading }] = projectAPI.useDeleteProjectMutation();
+
 
     let { id } = useParams<{ id }>();
     const { data: project, error, isLoading } = projectAPI.useFetchProjectByIdQuery(id);
@@ -25,14 +27,20 @@ const CardPage: React.FC<CardPage> = () => {
     const handleUpdate = (project: IProject) => {
         updateProject(project)
     }
+    const handleRemove = (project: IProject) => {
+        deleteProject(project)
+    }
 
     return (
-        <div>
-            <div>
+            <div style={{ margin: '5% 2% 30% 20%' }}>
                 {error && <h1>Error find...</h1>}
-                {(project) ? <ProjectDetails project={project}  update={handleUpdate} /> : erroeMassege()}
+                {isLoading && <h1>Loading find by id project...</h1>}
+                {DeleteError && <h1>Error delete...</h1>}
+                {DeleteIsLoading && <h1>Loading Delete project...</h1>}
+                {UpdateError && <h1>Error update...</h1>}
+                {UpdateIsLoading && <h1>Loading update project...</h1>}
+                {(project) ? <ProjectDetails project={project}  update={handleUpdate}  remove={handleRemove} /> : erroeMassege()}
             </div>
-        </div>
     )
 }
 

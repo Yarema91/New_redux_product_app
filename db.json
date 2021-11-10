@@ -3,8 +3,9 @@
     {
       "id": 1,
       "imageUrl": "https://source.unsplash.com/1600x900/?project",
-      "title": "First project",
-      "body": "Some quick example text about project. Some quick example text about project.Some quick example text about project.Some quick example text about project."
+      "title": "first prorejt plus",
+      "body": "Some quick example text about project. Some quick example text about project.Some quick example text about project.Some quick example text about project.",
+      "status": "active"
     },
     {
       "id": 2,
@@ -19,14 +20,19 @@
       "body": "You may have noticed that all of the tutorials on this site have a dashed line running through the center of each step, both in the horizontal and vertical direction. If students make their own centered lines on their own paper, before drawing, they will have an easy reference to follow. The more realistic kangaroo tutorial even has an extra set, for a total of 16 boxes, to help older students be a little more precise."
     },
     {
-      "title": "Yarema",
-      "body": "Yarema",
-      "id": 9
-    },
-    {
-      "title": "10 November",
+      "title": "11 November",
       "body": "10 November",
       "id": 10
+    },
+    {
+      "title": "remove Markian",
+      "body": "remove(project);",
+      "id": 11
+    },
+    {
+      "title": "first prorejt plus",
+      "body": "groop",
+      "id": 12
     }
   ],
   "comments": [],

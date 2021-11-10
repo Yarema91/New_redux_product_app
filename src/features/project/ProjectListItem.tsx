@@ -9,10 +9,10 @@ import { lineClamp } from '@tailwindcss/line-clamp';
 interface ProjectListItem {
     project: IProject;
     // update: (project: IProject) => void;
-    remove: (project: IProject) => void;
+    // remove: (project: IProject) => void;
 }
 
-const ProjectListItem: React.FC<ProjectListItem> = ({ project, remove }) => {
+const ProjectListItem: React.FC<ProjectListItem> = ({ project }) => {
 
     // "id": 1,
     // "imageUrl": "some url here",
@@ -25,11 +25,11 @@ const ProjectListItem: React.FC<ProjectListItem> = ({ project, remove }) => {
     // "weight": "200g",
     // "comments": ["CommentModel", "CommentModel"]
 
-    const handleDelete = (event: React.MouseEvent) => {
-        event.stopPropagation();
-        remove(project)
+    // const handleDelete = (event: React.MouseEvent) => {
+    //     event.stopPropagation();
+    //     remove(project)
 
-    };
+    // };
     // const handleUpdate = (event: React.MouseEvent) => {
     //     const title = prompt() || ""
     //     update({ ...project, title } as IProject)
@@ -47,7 +47,8 @@ const ProjectListItem: React.FC<ProjectListItem> = ({ project, remove }) => {
                       <img className="ml-3" src={project.imageUrl} width='96px' alt="Generic placeholder image"/>
                      
                     <Card.Title>{project.id}. {project.title}</Card.Title>
-                    <Card.Text className="${tw`${lineClamp(3)}`}">
+                    <Card.Text >
+                    {/* className="${tw`${lineClamp(3)}`}" */}
                     {project.body.replace(/(.{58})..+/, `$1...`)}
                             {/* {project.body} */}
                     </Card.Text>
@@ -58,7 +59,7 @@ const ProjectListItem: React.FC<ProjectListItem> = ({ project, remove }) => {
             // onClick={handleUpdate}
             >
                 {/* {project.id}. {project.title} */}
-                <button onClick={handleDelete}>delete</button>
+                {/* <button onClick={handleDelete}>delete</button> */}
                 {/* <button onClick={handleUpdate}>edit</button> */}
                 {/* <button  href="/card/id" >details</button> */}
                 {/* <Link to={`/card/${project.id}`} role="button">Detailes</Link> */}

@@ -1,10 +1,24 @@
 // import { Link } from 'react-router-dom';
 import { Navbar, Nav, Container, Form, FormControl, Button } from 'react-bootstrap';
+import { IProject } from '../models/IProject';
+import { projectAPI } from '../services/ProjectService';
 
 const Header = () => {
+
+    const [createProject, { error: CreateError, isLoading: CreateIsLoading }] = projectAPI.useCreateProjectMutation()
+
+    const handleCreate = async () => {
+        const title = prompt();
+        if(title == null){
+            <h1>Title empty...</h1>
+        } else await createProject({ title, body: title } as IProject)
+
+    }
+
     return (
         <Navbar bg="light" expand="lg"
         //  sticky="top"
+        fixed="top"
         >
             <Container fluid>
                 <Navbar.Brand href="/">Logo</Navbar.Brand>
@@ -35,7 +49,9 @@ const Header = () => {
                         navbarScroll
                     >
                     </Nav>
-                    <Button variant="outline-success"  className="me-2">New Product</Button>
+                    {CreateIsLoading && <h1>Loading create project...</h1>}
+                    {CreateError && <h1>Error creative...</h1>}
+                    <Button variant="outline-success"  className="me-2" onClick={handleCreate}>Create Project</Button>
                     <Button variant="success">Log In</Button>
                 </Navbar.Collapse>
             </Container>
