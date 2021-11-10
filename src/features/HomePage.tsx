@@ -8,7 +8,6 @@ import ProjectContainer from "./project/ProjectContainer";
 const HomePage = () => {
 
   const value = useAppSelector(state => state.counterReducer.value);
-
   const dispatch = useDispatch();
 
   return (

@@ -1,0 +1,15 @@
+.clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  
+  .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100px;
+    min-height: 55px;
+  }
+  

@@ -1,6 +1,7 @@
 export interface IProject {
-    id: "number",
-    title: "string",
-    body: "string",
+    id: number,
+    title: string,
+    imageUrl: string,
+    body: string,
     // counter: "number"
 }

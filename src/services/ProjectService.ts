@@ -16,6 +16,13 @@ export const projectAPI = createApi({
             }),
             providesTags: result => ['Project']
         }),
+        fetchProjectById: build.query<IProject, number>({
+            query: (id) => ({
+                url: `/projects/${id}`,
+                method: 'GET',
+            }),
+            providesTags: result => ['Project']
+        }),
         createProject: build.mutation<IProject, IProject>({
             query: (project) => ({
                 url: `/projects`,
