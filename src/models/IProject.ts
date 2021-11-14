@@ -3,5 +3,6 @@ export interface IProject {
     title: string,
     imageUrl: string,
     body: string,
-    // counter: "number"
+    status: string
+    
 }

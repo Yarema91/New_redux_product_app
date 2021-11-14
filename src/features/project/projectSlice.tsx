@@ -1,14 +1,14 @@
 import { createSlice } from "@reduxjs/toolkit";
 import {  IProject } from "../../models/IProject";
 
-interface productState {
-    products: IProject[];
+interface projectState {
+    projects: IProject[];
     isLoading: boolean;
     error: string;
 } 
 
-const initialState: productState  = {
-    products: [],
+const initialState: projectState  = {
+    projects: [],
     isLoading: false,
     error: ""
 
@@ -31,7 +31,7 @@ export const projectSlice = createSlice ({
 
     reducers: {
         projects: (state) => {
-            console.log('products.state');
+            console.log('projects.state');
             
         }
         // increase: (state) => {

@@ -5,6 +5,8 @@ import App from "./App";
 import { setupStore } from "./store/store";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
+// import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css");
+
 
 const store = setupStore();
 

@@ -8,7 +8,7 @@ export const projectAPI = createApi({
     tagTypes: ['Project'],
     endpoints: (build) => ({
         fetchAllProjects: build.query<IProject[], number>({
-            query: (limit: number = 5) => ({
+            query: (limit: number = 10) => ({
                 url: `/projects`,
                 params: {
                     _limit: limit
