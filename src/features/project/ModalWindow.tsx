@@ -3,7 +3,7 @@ import { Button, Modal } from "react-bootstrap"
 import { useState } from "react";
 
 
-const ModalWindow = ({ title, nameButton, children, onHandleSubmit }) => {
+const ModalWindow = ({ title, nameButton, children, onHandleSubmit, disabled }) => {
 
     const [show, setShow] = useState(false);
 
@@ -31,11 +31,14 @@ const ModalWindow = ({ title, nameButton, children, onHandleSubmit }) => {
                     <Button variant="secondary" onClick={handleClose}>
                         Close
                     </Button>
+                   
                     <Button variant="primary"
-                        // disabled // not active
+                        disabled={disabled}
                         onClick={onSubmit} >
                         {nameButton}
                     </Button>
+                    
+
                 </Modal.Footer>
             </Modal>
         </div>

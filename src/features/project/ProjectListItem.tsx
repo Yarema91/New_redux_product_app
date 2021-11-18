@@ -49,7 +49,7 @@ const ProjectListItem: React.FC<ProjectListItem> = ({ project }) => {
                     <Card.Title>{project.id}. {project.title}</Card.Title>
                     <Card.Text >
                     {/* className="${tw`${lineClamp(3)}`}" */}
-                    {project.body.replace(/(.{58})..+/, `$1...`)}
+                    {project.body.replace(/(.{58})..+/, `$1...`)}  
                             {/* {project.body} */}
                     </Card.Text>
                     <Link to={`/card/${project.id}`} role="button">More to</Link>

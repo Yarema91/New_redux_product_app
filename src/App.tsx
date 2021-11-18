@@ -10,8 +10,8 @@ const App = () => {
     // const {} = useAppSelector(state => state.productReducer.products);
 
     return (
-        <BrowserRouter>
-            <Header />
+       <BrowserRouter>
+        <Header />
             <Switch>
                 <Route exact
                     path="/" component={HomePage}

@@ -23,6 +23,13 @@ export const projectAPI = createApi({
             }),
             providesTags: result => ['Project']
         }),
+        fetchProjectByNameSearch: build.query<IProject[], string>({
+            query: (searchText: string) => ({
+                url: `/projects?q=${searchText}`,
+                method: 'GET',
+            }),
+            providesTags: result => ['Project']
+        }),
         createProject: build.mutation<IProject, IProject>({
             query: (project) => ({
                 url: `/projects`,

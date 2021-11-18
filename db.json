@@ -22,48 +22,39 @@
       "status": "active"
     },
     {
-      "title": "12 November",
-      "body": "10 November",
-      "id": 10,
-      "status": "active"
-    },
-    {
-      "title": "remove Markian",
-      "body": "remove(project);",
-      "id": 11
-    },
-    {
-      "id": 15,
+      "id": 11,
       "imageUrl": "https://source.unsplash.com/1600x900/?project2",
       "title": "Eleventh project",
       "body": "VillageWaters is a three-year development project (March 2016 – February 2019) focusing on wastewater treatment in sparsely populated areas. The project is funded by the Interreg Baltic Sea Region Programme 2014-2020, which supports integrated territorial development and cooperation for a more innovative, better accessible and sustainable Baltic Sea Region.",
       "status": "process"
     },
     {
-      "id": 16,
-      "imageUrl": "https://source.unsplash.com/1600x900/?project2",
-      "title": "Few projects",
-      "body": "VillageWaters is a three-year development project (March 2016 – February 2019) focusing on wastewater treatment in sparsely populated areas. The project is funded by the Interreg Baltic Sea Region Programme 2014-2020, which supports integrated territorial development and cooperation for a more innovative, better accessible and sustainable Baltic Sea Region.",
-      "status": "process"
-    },
-    {
-      "id": 17,
-      "imageUrl": "https://source.unsplash.com/1600x900/?project2",
-      "title": "Last project",
-      "body": "VillageWaters is a three-year development project (March 2016 – February 2019) focusing on wastewater treatment in sparsely populated areas. The project is funded by the Interreg Baltic Sea Region Programme 2014-2020, which supports integrated territorial development and cooperation for a more innovative, better accessible and sustainable Baltic Sea Region.",
-      "status": "process"
-    },
-    {
-      "title": "jbjbkbjb",
-      "body": "jbjbkbjb",
+      "title": "nllnlnl",
+      "imageUrl": "https://source.unsplash.com/1600x900/?project-art",
+      "body": ";n;n;n;n;n",
       "status": "finish",
-      "id": 18
+      "id": 12
     },
     {
-      "title": "jbbjjjjb",
-      "body": "jbbjjjjb",
+      "title": "India  weeds",
+      "imageUrl": "https://source.unsplash.com/1600x900/?project-art",
+      "body": "335467768nkkn",
       "status": "finish",
-      "id": 19
+      "id": 13
+    },
+    {
+      "title": "lmlml",
+      "imageUrl": "https://source.unsplash.com/1600x900/?project-art",
+      "body": "mlmlml",
+      "status": "finish",
+      "id": 14
+    },
+    {
+      "title": "kkl",
+      "imageUrl": "https://source.unsplash.com/1600x900/?project-art",
+      "body": "sleep",
+      "status": "finish",
+      "id": 15
     }
   ],
   "comments": [],
