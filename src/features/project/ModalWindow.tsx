@@ -16,7 +16,7 @@ const ModalWindow = ({ title, nameButton, children, onHandleSubmit, disabled }) 
 
     return (
         <div>
-            <Button variant="primary" onClick={handleShow}>
+            <Button variant="outline-success" className="me-2" onClick={handleShow}>
                 {title}
             </Button>
 
@@ -38,7 +38,6 @@ const ModalWindow = ({ title, nameButton, children, onHandleSubmit, disabled }) 
                         {nameButton}
                     </Button>
                     
-
                 </Modal.Footer>
             </Modal>
         </div>

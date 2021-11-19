@@ -1,5 +1,9 @@
 import { Button, Card } from "react-bootstrap"
+import { useDispatch } from "react-redux";
+import { Link } from "react-router-dom";
+import { useAppSelector } from "../../hooks/redux";
 import { IProject } from "../../models/IProject"
+import { decrease, increase } from "../counter/counterSlice";
 
 interface ProjectDetails {
     project: IProject,
@@ -8,6 +12,9 @@ interface ProjectDetails {
 }
 
 const ProjectDetails: React.FC<ProjectDetails> = ({ project, update, remove }) => {
+
+    const value = useAppSelector(state => state.counterReducer.value);
+    const dispatch = useDispatch();
 
     const handleUpdate = (event: React.MouseEvent) => {
 
@@ -19,14 +26,6 @@ const ProjectDetails: React.FC<ProjectDetails> = ({ project, update, remove }) =
         } else {
             return
         }
-        // const title = prompt() 
-        // if(!title){
-        //     return
-        // } else {
-        //     if(title !== ''){
-        //         update({ ...project, title } as IProject)
-        //     } else return
-        // }
 
     }
     const handleDelete = (event: React.MouseEvent) => {
@@ -36,11 +35,30 @@ const ProjectDetails: React.FC<ProjectDetails> = ({ project, update, remove }) =
             window.location.href = "/";
         } else return
     };
+   
 
     return (
         <div  >
             <Card style={{ width: '70%' }}  >
-                {/* style={{ width: '38rem'}}  */}
+                
+                <Link aria-label="Close"
+                    className="position-absolute top-0 end-0"
+                    to="/"
+                    style={{
+                        color: "black",
+                        margin: '0.5em 0.5em 0.5em ',
+                        cursor: "pointer",
+                        width: "3%",
+                        background: 'white',
+                        borderRadius: "5px",
+                    }} ><i className="bi bi-x-lg"  style={{margin: '0.2em 0.2em 0.5em ',}}></i>
+                </Link>
+                
+                {/* <div style={{ margin: '4%' }}><h1>{value}</h1>
+                    <button className="me-2" onClick={() => dispatch(decrease())}>-</button>
+                    <button onClick={() => dispatch(increase())}>+</button>
+                </div > */}
+
                 <Card.Img variant="top" src={project.imageUrl} />
                 {/* <img  /> */}
                 <Card.Body>
