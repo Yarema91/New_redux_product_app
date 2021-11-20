@@ -1,0 +1,64 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "imageUrl": "https://source.unsplash.com/1600x900/?project",
+      "title": "First project",
+      "body": "Some quick example text about project. Some quick example text about project.Some quick example text about project.Some quick example text about project.",
+      "status": "finish"
+    },
+    {
+      "id": 2,
+      "imageUrl": "https://source.unsplash.com/1600x900/?project2",
+      "title": "Second project",
+      "body": "VillageWaters is a three-year development project (March 2016 – February 2019) focusing on wastewater treatment in sparsely populated areas. The project is funded by the Interreg Baltic Sea Region Programme 2014-2020, which supports integrated territorial development and cooperation for a more innovative, better accessible and sustainable Baltic Sea Region.",
+      "status": "process"
+    },
+    {
+      "id": 3,
+      "imageUrl": "https://source.unsplash.com/1600x900/?project-",
+      "title": "Third project",
+      "body": "You may have noticed that all of the tutorials on this site have a dashed line running through the center of each step, both in the horizontal and vertical direction. If students make their own centered lines on their own paper, before drawing, they will have an easy reference to follow. The more realistic kangaroo tutorial even has an extra set, for a total of 16 boxes, to help older students be a little more precise.",
+      "status": "active"
+    },
+    {
+      "id": 11,
+      "imageUrl": "https://source.unsplash.com/1600x900/?project2",
+      "title": "Eleventh project",
+      "body": "VillageWaters is a three-year development project (March 2016 – February 2019) focusing on wastewater treatment in sparsely populated areas. The project is funded by the Interreg Baltic Sea Region Programme 2014-2020, which supports integrated territorial development and cooperation for a more innovative, better accessible and sustainable Baltic Sea Region.",
+      "status": "process"
+    },
+    {
+      "title": "nllnlnl",
+      "imageUrl": "https://source.unsplash.com/1600x900/?project-art",
+      "body": ";n;n;n;n;n",
+      "status": "finish",
+      "id": 12
+    },
+    {
+      "title": "Indian tradishion dish",
+      "imageUrl": "https://source.unsplash.com/1600x900/?project-art",
+      "body": "335467768nkkn",
+      "status": "finish",
+      "id": 13
+    },
+    {
+      "title": "Mackwaine",
+      "imageUrl": "https://source.unsplash.com/1600x900/?project-art",
+      "body": "Some men founded great community",
+      "status": "finish",
+      "id": 18
+    },
+    {
+      "title": "Good job",
+      "imageUrl": "https://source.unsplash.com/1600x900/?project-art",
+      "body": "Long text about project",
+      "status": "active",
+      "id": 19
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}
