@@ -1,4 +1,4 @@
-import { combineReducers, configureStore, getDefaultMiddleware }  from "@reduxjs/toolkit";
+import { combineReducers, configureStore }  from "@reduxjs/toolkit";
 
 import productReducer from "../features/project/projectSlice"
 import counterReducer from "../features/counter/counterSlice";

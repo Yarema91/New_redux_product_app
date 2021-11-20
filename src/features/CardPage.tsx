@@ -3,13 +3,11 @@ import { IProject } from "../models/IProject";
 import { useParams } from 'react-router-dom';
 import { projectAPI } from "../services/ProjectService";
 
+// interface CardPage {
+//     project: IProject
+// }
 
-
-interface CardPage {
-    project: IProject
-}
-
-const CardPage: React.FC<CardPage> = () => {
+const CardPage= () => {
 
     const [updateProject, {error: UpdateError, isLoading: UpdateIsLoading }] = projectAPI.useUpdateProjectMutation();
     const [deleteProject, {error: DeleteError, isLoading: DeleteIsLoading }] = projectAPI.useDeleteProjectMutation();
